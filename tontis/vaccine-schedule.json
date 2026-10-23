@@ -1,0 +1,189 @@
+{
+  "format": "tontis-vaccine-schedule",
+  "version": "2026-09-01",
+  "source": "T.C. Sağlık Bakanlığı Ulusal Çocukluk Dönemi Aşılama Takvimi (1 Eylül 2026)",
+  "names": {
+    "Hep-B": "Hepatit B",
+    "BCG": "Verem (BCG)",
+    "KPA": "Konjuge pnömokok",
+    "DaBT-İPA-Hib-HepB": "6'lı karma: difteri, boğmaca, tetanos, çocuk felci, Hib, hepatit B",
+    "OPA": "Ağızdan çocuk felci (polio)",
+    "KKK": "Kızamık, kızamıkçık, kabakulak",
+    "Suçiçeği": "Suçiçeği",
+    "Hep-A": "Hepatit A",
+    "DaBT-İPA": "4'lü karma: difteri, boğmaca, tetanos, çocuk felci",
+    "Td": "Erişkin tip tetanos-difteri"
+  },
+  "visits": [
+    {
+      "id": "birth",
+      "label": "Doğumda",
+      "months": 0,
+      "doses": [
+        {
+          "id": "hepb-1",
+          "vaccine": "Hep-B",
+          "dose": "1. doz"
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "label": "2. ay sonu",
+      "months": 2,
+      "doses": [
+        {
+          "id": "bcg-1",
+          "vaccine": "BCG",
+          "dose": "1. doz"
+        },
+        {
+          "id": "kpa-1",
+          "vaccine": "KPA",
+          "dose": "1. doz"
+        },
+        {
+          "id": "dabt6-1",
+          "vaccine": "DaBT-İPA-Hib-HepB",
+          "dose": "1. doz"
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "label": "4. ay sonu",
+      "months": 4,
+      "doses": [
+        {
+          "id": "kpa-2",
+          "vaccine": "KPA",
+          "dose": "2. doz"
+        },
+        {
+          "id": "dabt6-2",
+          "vaccine": "DaBT-İPA-Hib-HepB",
+          "dose": "2. doz"
+        }
+      ]
+    },
+    {
+      "id": "m6",
+      "label": "6. ay sonu",
+      "months": 6,
+      "doses": [
+        {
+          "id": "dabt6-3",
+          "vaccine": "DaBT-İPA-Hib-HepB",
+          "dose": "3. doz"
+        },
+        {
+          "id": "opa-1",
+          "vaccine": "OPA",
+          "dose": "1. doz"
+        }
+      ]
+    },
+    {
+      "id": "m9",
+      "label": "9. ay sonu",
+      "months": 9,
+      "doses": [
+        {
+          "id": "kkk-0",
+          "vaccine": "KKK",
+          "dose": "Ek doz"
+        }
+      ]
+    },
+    {
+      "id": "m12",
+      "label": "12. ay sonu",
+      "months": 12,
+      "doses": [
+        {
+          "id": "kpa-r",
+          "vaccine": "KPA",
+          "dose": "Rapel"
+        },
+        {
+          "id": "sucicegi-1",
+          "vaccine": "Suçiçeği",
+          "dose": "1. doz"
+        },
+        {
+          "id": "kkk-1",
+          "vaccine": "KKK",
+          "dose": "1. doz"
+        }
+      ]
+    },
+    {
+      "id": "m18",
+      "label": "18. ay sonu",
+      "months": 18,
+      "doses": [
+        {
+          "id": "dabt6-r",
+          "vaccine": "DaBT-İPA-Hib-HepB",
+          "dose": "Rapel"
+        },
+        {
+          "id": "opa-2",
+          "vaccine": "OPA",
+          "dose": "2. doz"
+        },
+        {
+          "id": "hepa-1",
+          "vaccine": "Hep-A",
+          "dose": "1. doz"
+        }
+      ]
+    },
+    {
+      "id": "m24",
+      "label": "24. ay sonu",
+      "months": 24,
+      "doses": [
+        {
+          "id": "hepa-2",
+          "vaccine": "Hep-A",
+          "dose": "2. doz"
+        }
+      ]
+    },
+    {
+      "id": "m48",
+      "label": "48. ay",
+      "months": 48,
+      "doses": [
+        {
+          "id": "sucicegi-2",
+          "vaccine": "Suçiçeği",
+          "dose": "2. doz"
+        },
+        {
+          "id": "kkk-2",
+          "vaccine": "KKK",
+          "dose": "2. doz"
+        },
+        {
+          "id": "dabt4-r",
+          "vaccine": "DaBT-İPA",
+          "dose": "Rapel"
+        }
+      ]
+    },
+    {
+      "id": "y13",
+      "label": "13 yaş",
+      "months": 156,
+      "doses": [
+        {
+          "id": "td-r",
+          "vaccine": "Td",
+          "dose": "Rapel"
+        }
+      ]
+    }
+  ]
+}

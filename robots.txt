@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
+Sitemap: https://gonencozgan.github.io/menia/sitemap.xml
 Sitemap: https://gonencozgan.github.io/mahya/sitemap.xml

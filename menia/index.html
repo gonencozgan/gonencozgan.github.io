@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menia: Adet Takvimi ve Regl Takibi Uygulaması, Ovülasyon Hesaplama</title>
+<meta name="description" content="Menia ücretsiz bir adet takvimi ve regl takibi uygulaması: sıradaki regl, ovülasyon (yumurtlama) günü, belirti örüntüleri, doktor raporu ve PIN kilidi. Hesap gerekmez.">
+<link rel="canonical" href="https://gonencozgan.github.io/menia/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:site_name" content="Menia">
+<meta property="og:title" content="Menia: Adet Takvimi ve Regl Takibi">
+<meta property="og:description" content="Regl, ovülasyon ve belirti takibi. Hesap yok; analiz ve doktor raporu ücretsiz.">
+<meta property="og:url" content="https://gonencozgan.github.io/menia/">
+<meta property="og:image" content="https://gonencozgan.github.io/menia/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="site.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MobileApplication",
+      "name": "Menia: Adet Takvimi & Regl",
+      "alternateName": "Menia",
+      "operatingSystem": "ANDROID",
+      "applicationCategory": "HealthApplication",
+      "inLanguage": "tr",
+      "description": "Adet takvimi, regl takibi, ovülasyon ve yumurtlama günü hesaplama, belirti örüntüleri, doktor raporu ve hatırlatıcılar. Kayıtlar yalnızca telefonda kalır.",
+      "url": "https://gonencozgan.github.io/menia/",
+      "downloadUrl": "https://play.google.com/store/apps/details?id=com.menia.app",
+      "installUrl": "https://play.google.com/store/apps/details?id=com.menia.app",
+      "image": "https://gonencozgan.github.io/menia/icon.png",
+      "screenshot": [
+        "https://gonencozgan.github.io/menia/img/01-bugun.png",
+        "https://gonencozgan.github.io/menia/img/04-analiz.png",
+        "https://gonencozgan.github.io/menia/img/06-ovulasyon.png"
+      ],
+      "offers": {"@type": "Offer", "price": "0", "priceCurrency": "TRY"},
+      "publisher": {"@type": "Organization", "name": "Menia", "email": "gonenc.ozgan@gmail.com"}
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "Menia ücretsiz mi?", "acceptedAnswer": {"@type": "Answer", "text": "Evet. Analiz, belirti örüntüleri, doktor raporu, modlar ve hatırlatıcılar dahil bütün özellikler ücretsizdir. Bazı ekranlarda küçük reklamlar vardır; istersen tek seferlik ödemeyle kaldırabilirsin, abonelik yoktur."}},
+        {"@type": "Question", "name": "Regl kayıtlarım nerede saklanıyor?", "acceptedAnswer": {"@type": "Answer", "text": "Yalnızca telefonunda. Menia hesap istemez ve kayıtlarını hiçbir sunucuya göndermez; telefonun bulut yedeğine bile almaz. Telefon değiştirirken kendi yedek dosyanı kullanırsın."}},
+        {"@type": "Question", "name": "Menia doğum kontrol yöntemi olarak kullanılabilir mi?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır. Ovülasyon ve doğurgan gün tahminleri planlama içindir; gebelikten korunmak için kullanılmamalıdır."}},
+        {"@type": "Question", "name": "Menia iPhone'da var mı?", "acceptedAnswer": {"@type": "Answer", "text": "Şimdilik yalnızca Android için Google Play'de."}}
+      ]
+    }
+  ]
+}
+</script>
+<style>
+  .hero { text-align: center; padding-top: 16px; }
+  .hero img.icon { width: 104px; height: 104px; border-radius: 26px; }
+  .shots { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 24px 0; }
+  .shots img { width: 100%; height: auto; border-radius: 18px; }
+  @media (max-width: 560px) { .shots { grid-template-columns: 1fr 1fr; } .shots img:nth-child(3) { display: none; } }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  @media (max-width: 560px) { .grid { grid-template-columns: 1fr; } }
+  .grid .card { margin: 0; }
+  .grid h3 { margin-top: 0; }
+</style>
+</head>
+<body>
+<main>
+  <section class="hero">
+    <img class="icon" src="icon.png" alt="Menia adet takvimi uygulaması simgesi" width="104" height="104">
+    <h1>Menia: Adet Takvimi ve Regl Takibi</h1>
+    <p class="lead">Sıradaki reglini, ovülasyon (yumurtlama) gününü ve doğurgan günlerini bil; belirtilerini kaydet, döngünün ritmini tanı. Hesap yok, kayıtların sadece telefonunda. Analiz ve doktor raporu dahil bütün özellikler ücretsiz.</p>
+    <a class="play" style="display:inline-block;padding:14px 24px;border-radius:999px;background:var(--ink);color:var(--bg);text-decoration:none;font-weight:800" href="https://play.google.com/store/apps/details?id=com.menia.app&amp;referrer=utm_source%3Dsite%26utm_medium%3Danasayfa">Google Play'den ücretsiz indir</a>
+  </section>
+
+  <div class="shots">
+    <img src="img/01-bugun.png" alt="Adet takvimi: regline kaç gün kaldığını ve doğurgan dönemi gösteren döngü halkası" width="1080" height="1920" loading="lazy">
+    <img src="img/04-analiz.png" alt="Regl takibi analizi: döngü uzunluğu ve regl süresi grafikleri" width="1080" height="1920" loading="lazy">
+    <img src="img/06-ovulasyon.png" alt="Yumurtlama günü hesaplama: bazal ateş grafiğinde ovülasyon" width="1080" height="1920" loading="lazy">
+  </div>
+
+  <h2>Ücretsiz hesaplayıcılar</h2>
+  <div class="grid">
+    <a class="card" href="adet-takvimi-hesaplama/" style="text-decoration:none;color:inherit"><h3>Adet takvimi hesaplama</h3>Sonraki 6 reglin, ovülasyon ve doğurgan günler.</a>
+    <a class="card" href="yumurtlama-gunu-hesaplama/" style="text-decoration:none;color:inherit"><h3>Yumurtlama günü hesaplama</h3>Ovülasyon günün ve hamile kalma şansının en yüksek olduğu günler.</a>
+    <a class="card" href="adet-gecikmesi-hesaplama/" style="text-decoration:none;color:inherit"><h3>Adet gecikmesi hesaplama</h3>Reglin kaç gün gecikti, gebelik testi ne zaman?</a>
+    <a class="card" href="dogum-tarihi-hesaplama/" style="text-decoration:none;color:inherit"><h3>Doğum tarihi hesaplama</h3>Tahmini doğum tarihi ve gebelik haftası.</a>
+  </div>
+
+  <h2>Adet takvimi ve regl takibi</h2>
+  <p>"Regl başladı" ve "Regl bitti" ile tek dokunuşta kayıt tutarsın. Menia son döngülerinin ortalamasıyla sıradaki reglini hesaplar, ne kadar şaşabileceğini (± gün) gösterir ve 12 döngü ileriye kadar adet takvimini çıkarır. Regl gecikirse günleri sayar, istersen hatırlatır.</p>
+
+  <h2>Ovülasyon ve yumurtlama günü</h2>
+  <p>Tahmini ovülasyon gününü, doğurgan dönemini ve her gün için gebelik şansını görürsün. Ovulasyon (LH) testi sonuçlarını ve sabah bazal vücut ısını kaydedersen Menia yumurtlama gününü senin ölçümlerinle bulur ve luteal evreni öğrenir. "Hamile kalmak istiyorum" modu doğurgan günleri ve testleri öne çıkarır.</p>
+
+  <h2>Belirti günlüğü ve ücretsiz analiz</h2>
+  <p>Kramp, baş ağrısı, şişkinlik, sivilce, ruh hali, enerji, uyku, akıntı ve 40'tan fazla belirtiyi kaydet. Menia döngü uzunluğu ve regl süresi grafiklerini çizer, belirti örüntülerini bulur ("Baş ağrısı genellikle reglden 2 gün önce") ve önümüzdeki günlerde nelerin beklenebileceğini söyler. Birçok uygulamada abonelikle sunulan bu analizler Menia'da ücretsiz.</p>
+
+  <h2>Doktor raporu</h2>
+  <p>Son 3, 6 ya da 12 döngünü tek bir PDF'te topla: regl tarihleri, döngü uzunlukları, ovülasyon, tekrarlayan belirtiler, bazal ateş ve notlar. Kadın doğum uzmanına giderken yanına al.</p>
+
+  <h2>Her dönem için bir mod</h2>
+  <p>Regl takibi, hamile kalmak, doğum kontrolü (hap, halka, bant ve 3 aylık iğne hatırlatıcısı), perimenopoz ve hamilelik. Hangi dönemdeysen Menia ona göre değişir.</p>
+
+  <h2>Gizlilik önce gelir</h2>
+  <p>Hesap yok, sunucu yok, bulut yedeği yok: regl ve sağlık kayıtların yalnızca telefonunda. PIN, parmak izi ya da yüz kilidi, son uygulamalar ekranında içeriği gizleme ve ne hakkında olduğunu söylemeyen gizli bildirimler. Ayrıntılar <a href="gizlilik/">gizlilik politikasında</a>.</p>
+
+  <h2>Sık sorulan sorular</h2>
+  <details><summary>Menia ücretsiz mi?</summary><p>Evet. Analiz, belirti örüntüleri, doktor raporu, modlar ve hatırlatıcılar dahil bütün özellikler ücretsizdir. Bazı ekranlarda küçük reklamlar vardır; istersen tek seferlik ödemeyle kaldırabilirsin, abonelik yoktur.</p></details>
+  <details><summary>Regl kayıtlarım nerede saklanıyor?</summary><p>Yalnızca telefonunda. Menia hesap istemez ve kayıtlarını hiçbir sunucuya göndermez; telefonun bulut yedeğine bile almaz. Telefon değiştirirken kendi yedek dosyanı kullanırsın.</p></details>
+  <details><summary>Menia doğum kontrol yöntemi olarak kullanılabilir mi?</summary><p>Hayır. Ovülasyon ve doğurgan gün tahminleri planlama içindir; gebelikten korunmak için kullanılmamalıdır.</p></details>
+  <details><summary>Menia iPhone'da var mı?</summary><p>Şimdilik yalnızca Android için Google Play'de.</p></details>
+
+  <div class="cta">
+    <strong>Menia'yı dene</strong>
+    Adet takvimi, regl takibi ve ovülasyon hesaplama tek uygulamada. Ücretsiz, hesap gerekmez.
+    <br><a class="play" href="https://play.google.com/store/apps/details?id=com.menia.app&amp;referrer=utm_source%3Dsite%26utm_medium%3Danasayfa-alt">Google Play'den indir</a>
+  </div>
+</main>
+<footer>
+  Menia bir doğum kontrol yöntemi değildir; tıbbi tavsiye yerine geçmez. · <a href="gizlilik/">Gizlilik politikası</a> · <a href="mailto:gonenc.ozgan@gmail.com">İletişim</a>
+</footer>
+</body>
+</html>

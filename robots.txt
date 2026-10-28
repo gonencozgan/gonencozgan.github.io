@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gonencozgan.github.io/mahya/sitemap.xml

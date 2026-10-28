@@ -1,0 +1,45 @@
+/* Shared styles for the Menia pages. Colours follow lib/ui/theme.dart. */
+:root {
+  --bg: #fff7f4; --card: #ffffff; --ink: #2b1d3a; --muted: #6e6382; --brand: #b8406a; --line: #f1e2e4;
+  --period: #d9435f; --period-soft: #ffe2e8; --fertile: #16807b; --fertile-soft: #d8f2ef; --luteal-soft: #ede5ff;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #15111e; --card: #201a2c; --ink: #f7eef5; --muted: #b4a6c3; --brand: #ff86a8; --line: #33293f;
+    --period: #ff7e95; --period-soft: #3e1f2a; --fertile: #5cd3ca; --fertile-soft: #123331; --luteal-soft: #2a2347;
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 780px; margin: 0 auto; padding: 24px 16px 64px; }
+header.site { max-width: 780px; margin: 0 auto; padding: 16px 16px 0; display: flex; align-items: center; gap: 10px; }
+header.site a { color: var(--ink); text-decoration: none; font-weight: 800; display: flex; align-items: center; gap: 10px; }
+header.site img { width: 36px; height: 36px; border-radius: 10px; }
+nav.links { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 15px; margin-top: 4px; }
+h1 { font-family: Georgia, "Times New Roman", serif; font-size: 34px; line-height: 1.2; margin: 18px 0 8px; }
+h2 { font-family: Georgia, "Times New Roman", serif; font-size: 25px; line-height: 1.25; margin: 40px 0 10px; }
+h3 { font-size: 19px; margin: 24px 0 6px; }
+a { color: var(--brand); }
+.lead { font-size: 19px; color: var(--muted); margin: 0 0 18px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 22px; padding: 20px 22px; margin: 18px 0; }
+.calc label { display: block; font-weight: 700; margin: 12px 0 6px; }
+.calc input { width: 100%; font: inherit; padding: 12px 14px; border: 2px solid var(--line); border-radius: 14px; background: var(--bg); color: var(--ink); }
+.calc .row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+@media (max-width: 520px) { .calc .row { grid-template-columns: 1fr; } }
+button { font: inherit; font-weight: 800; border: 0; border-radius: 999px; padding: 14px 22px; margin-top: 16px; background: var(--brand); color: #fff; cursor: pointer; width: 100%; }
+.result { display: none; margin-top: 18px; }
+.result.show { display: block; }
+.result table { width: 100%; border-collapse: collapse; font-size: 15px; }
+.result th, .result td { text-align: left; padding: 9px 6px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.result th { color: var(--muted); font-weight: 700; }
+.pill { display: inline-block; padding: 2px 10px; border-radius: 999px; font-size: 14px; font-weight: 700; }
+.pill.period { background: var(--period-soft); color: var(--period); }
+.pill.fertile { background: var(--fertile-soft); color: var(--fertile); }
+.big { font-size: 28px; font-weight: 800; margin: 4px 0; }
+.note { font-size: 14px; color: var(--muted); }
+.cta { background: var(--luteal-soft); border-radius: 22px; padding: 20px 22px; margin: 30px 0; }
+.cta strong { display: block; font-size: 19px; margin-bottom: 4px; }
+.cta a.play { display: inline-block; margin-top: 10px; padding: 12px 20px; border-radius: 999px; background: var(--ink); color: var(--bg); text-decoration: none; font-weight: 800; }
+details { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 12px 18px; margin: 10px 0; }
+summary { font-weight: 800; cursor: pointer; }
+footer { max-width: 780px; margin: 0 auto; padding: 0 16px 40px; font-size: 14px; color: var(--muted); }

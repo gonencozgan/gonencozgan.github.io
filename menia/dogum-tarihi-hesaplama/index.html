@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Doğum Tarihi Hesaplama ve Gebelik Haftası Hesaplama | Menia</title>
+<meta name="description" content="Doğum tarihi hesaplama: son adet tarihinden tahmini doğum tarihini, kaçıncı gebelik haftasında olduğunu ve hangi trimesterde olduğunu hemen öğren.">
+<link rel="canonical" href="https://gonencozgan.github.io/menia/dogum-tarihi-hesaplama/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:title" content="Doğum Tarihi ve Gebelik Haftası Hesaplama">
+<meta property="og:description" content="Son adet tarihinden tahmini doğum tarihi ve gebelik haftası.">
+<meta property="og:url" content="https://gonencozgan.github.io/menia/dogum-tarihi-hesaplama/">
+<meta property="og:image" content="https://gonencozgan.github.io/menia/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../icon.png">
+<link rel="stylesheet" href="../site.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "name": "Doğum Tarihi Hesaplama",
+      "url": "https://gonencozgan.github.io/menia/dogum-tarihi-hesaplama/",
+      "inLanguage": "tr",
+      "description": "Son adet tarihinden tahmini doğum tarihini ve gebelik haftasını hesaplar."
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Menia", "item": "https://gonencozgan.github.io/menia/"},
+        {"@type": "ListItem", "position": 2, "name": "Doğum Tarihi Hesaplama", "item": "https://gonencozgan.github.io/menia/dogum-tarihi-hesaplama/"}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "Doğum tarihi nasıl hesaplanır?", "acceptedAnswer": {"@type": "Answer", "text": "Son adet tarihinin ilk gününe 280 gün (40 hafta) eklenir. Döngü 28 günden uzun ya da kısaysa aradaki fark kadar ileri ya da geri kaydırılır."}},
+        {"@type": "Question", "name": "Gebelik haftası neden son adetten sayılır?", "acceptedAnswer": {"@type": "Answer", "text": "Döllenmenin tam günü genellikle bilinmez; son adetin ilk günü ise çoğu kişi tarafından bilinir. Bu yüzden gebelik haftaları son adetten sayılır ve ilk iki hafta döllenmeden öncesine denk gelir."}},
+        {"@type": "Question", "name": "Bebekler tahmini doğum tarihinde mi doğar?", "acceptedAnswer": {"@type": "Answer", "text": "Bebeklerin yalnızca küçük bir kısmı tam tahmini tarihte doğar; 37 ile 42. haftalar arasındaki doğumlar zamanında kabul edilir. Doktorun ultrasonla tarihi güncelleyebilir."}}
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header class="site"><a href="../"><img src="../icon.png" alt=""> Menia</a></header>
+<main>
+  <h1>Doğum Tarihi Hesaplama</h1>
+  <p class="lead">Son adetinin ilk gününü gir; tahmini doğum tarihini, gebeliğin kaçıncı haftasında olduğunu ve trimesterini hesaplayalım.</p>
+
+  <form class="card calc" id="calc">
+    <label for="last">Son adetin ilk günü</label>
+    <input type="date" id="last" required>
+    <label for="cycle">Döngü uzunluğu (gün)</label>
+    <input type="number" id="cycle" min="20" max="45" value="28" inputmode="numeric">
+    <button type="submit">Doğum tarihimi hesapla</button>
+    <div class="result" id="result" aria-live="polite"></div>
+  </form>
+
+  <div class="cta">
+    <strong>Gebeliğini hafta hafta takip et</strong>
+    Kardeş uygulamamız Tontiş; hafta hafta gebelik takvimi, tekme sayacı, kasılma ölçer ve doğumdan sonra bebek takibi sunar. Menia'yı kullanıyorsan "Hamileyim" moduna geçerek haftalarını orada da görebilirsin.
+    <br><a class="play" href="https://play.google.com/store/apps/details?id=com.tontis.app&amp;referrer=utm_source%3Dmenia-site%26utm_medium%3Ddogum-tarihi">Tontiş'i Google Play'de aç</a>
+  </div>
+
+  <h2>Doğum tarihi nasıl hesaplanır?</h2>
+  <p>Tahmini doğum tarihi, son adetin ilk gününe 280 gün (40 hafta) eklenerek bulunur. Bu yöntem Naegele kuralı olarak bilinir ve 28 günlük bir döngüyü varsayar. Döngün daha uzunsa yumurtlama daha geç olacağından tarih o kadar ileri, daha kısaysa o kadar geri kaydırılır. Yukarıdaki hesaplayıcı bu düzeltmeyi döngü uzunluğuna göre yapar.</p>
+  <p>Gebelik haftaları son adetin ilk gününden sayılır. Bu yüzden yumurtlama ve döllenme genellikle 2. haftanın sonunda olur; gebelik testi pozitif çıktığında çoğu kişi zaten 4 ya da 5 haftalık gebedir.</p>
+
+  <h3>Trimesterler</h3>
+  <ul>
+    <li><strong>1. trimester:</strong> 1–13. haftalar</li>
+    <li><strong>2. trimester:</strong> 14–27. haftalar</li>
+    <li><strong>3. trimester:</strong> 28. haftadan doğuma kadar</li>
+  </ul>
+
+  <h3>Tahmini tarih bir hedef değil, bir aralıktır</h3>
+  <p>Bebeklerin yalnızca küçük bir kısmı tam tahmini tarihte doğar. 37 ile 42. haftalar arasındaki doğumlar zamanında kabul edilir. İlk ultrason ölçümleri tarihi daha doğru belirleyebilir; doktorunun verdiği tarihi esas al.</p>
+
+  <h2>Sık sorulan sorular</h2>
+  <details><summary>Doğum tarihi nasıl hesaplanır?</summary><p>Son adet tarihinin ilk gününe 280 gün (40 hafta) eklenir. Döngü 28 günden uzun ya da kısaysa aradaki fark kadar ileri ya da geri kaydırılır.</p></details>
+  <details><summary>Gebelik haftası neden son adetten sayılır?</summary><p>Döllenmenin tam günü genellikle bilinmez; son adetin ilk günü ise çoğu kişi tarafından bilinir. Bu yüzden gebelik haftaları son adetten sayılır ve ilk iki hafta döllenmeden öncesine denk gelir.</p></details>
+  <details><summary>Bebekler tahmini doğum tarihinde mi doğar?</summary><p>Bebeklerin yalnızca küçük bir kısmı tam tahmini tarihte doğar; 37 ile 42. haftalar arasındaki doğumlar zamanında kabul edilir. Doktorun ultrasonla tarihi güncelleyebilir.</p></details>
+
+  <h2>Diğer hesaplayıcılar</h2>
+  <nav class="links">
+    <a href="../adet-takvimi-hesaplama/">Adet takvimi hesaplama</a>
+    <a href="../yumurtlama-gunu-hesaplama/">Yumurtlama (ovülasyon) günü hesaplama</a>
+    <a href="../adet-gecikmesi-hesaplama/">Adet gecikmesi hesaplama</a>
+  </nav>
+</main>
+<footer>
+  Bu sayfa genel bilgilendirme içindir; tıbbi tavsiye yerine geçmez. Gebelik takibini doktorunla yap. Hesaplama tarayıcında yapılır; girdiğin tarih hiçbir yere gönderilmez.
+  · <a href="../gizlilik/">Gizlilik</a> · <a href="../">Menia</a>
+</footer>
+<script src="../cycle.js"></script>
+<script>
+  const last = document.getElementById('last');
+  setUpDateInput(last, 60);
+  document.getElementById('calc').addEventListener('submit', (e) => {
+    e.preventDefault();
+    const start = parseDay(last.value);
+    const cycleLength = clampNumber(document.getElementById('cycle'), 20, 45, 28);
+    const due = addDays(start, 280 + (cycleLength - 28));
+    const days = Math.max(0, daysBetween(start, today()) - (cycleLength - 28));
+    const weeks = Math.floor(days / 7);
+    const trimester = weeks < 14 ? 1 : weeks < 28 ? 2 : 3;
+    const left = daysBetween(today(), due);
+    const result = document.getElementById('result');
+    result.innerHTML = `
+      <p class="note">Tahmini doğum tarihin</p>
+      <p class="big">${withYear.format(due)}</p>
+      <table>
+        <tr><th>Gebelik haftası</th><td>${weeks}. hafta ${days % 7}. gün</td></tr>
+        <tr><th>Trimester</th><td>${trimester}. trimester</td></tr>
+        <tr><th>Doğuma kalan</th><td>${left > 0 ? `${left} gün` : 'Tahmini tarih geçti'}</td></tr>
+      </table>
+      <p class="note">Naegele kuralına göre tahmindir; doktorunun verdiği tarihi esas al.</p>`;
+    result.classList.add('show');
+  });
+</script>
+</body>
+</html>

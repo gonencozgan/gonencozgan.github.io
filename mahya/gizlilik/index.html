@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mahya Gizlilik Politikası</title>
+<meta name="description" content="Mahya: Namaz & Ezan Vakti uygulamasının gizlilik politikası. Hesap yok; kayıtların ve konumun telefonunda kalır.">
+<link rel="icon" href="../icon.png">
+<style>
+  :root { --bg: #F6F2EA; --card: #FFFFFF; --ink: #15212C; --muted: #69727D; --brand: #0D6375; --line: #E8E0D1; color-scheme: light; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0B131A; --card: #15202A; --ink: #EDF1F4; --muted: #98A4AF; --brand: #5CC0CF; --line: #243340; color-scheme: dark; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 32px; line-height: 1.2; margin: 0 0 4px; }
+  h2 { font-size: 21px; margin: 36px 0 8px; }
+  .muted { color: var(--muted); }
+  .summary { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 4px 22px; margin-top: 24px; }
+  a { color: var(--brand); }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  th, td { text-align: left; padding: 8px 6px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Mahya Gizlilik Politikası</h1>
+  <p class="muted">Mahya: Namaz &amp; Ezan Vakti (Android, <code>com.mahya.app</code>) · Yürürlük: 28 Ekim 2026</p>
+
+  <div class="summary">
+    <p><strong>Kısaca:</strong> Mahya hesap istemez. Seçtiğin yerler, namaz takibin, kaza ve zikir kayıtların yalnızca telefonunda saklanır, bize ya da başka birine gönderilmez. Namaz vakitleri ve kıble telefonda hesaplanır; konumun bunun için dışarı gönderilmez. Uygulama ücretsizdir ve Google'ın reklam hizmeti AdMob ile birkaç ekranın sonunda reklam gösterir. AdMob, reklam için cihazına ait bazı bilgileri toplar (madde 4).</p>
+  </div>
+
+  <h2>1. Telefonda saklanan bilgiler</h2>
+  <p>Seçtiğin yerler; kıldığın ya da kazaya kalan vakitler; kaza namazı ve oruç borçların; zikirlerin ve günlük sayıları; Kur'an'da yer imlerin ve kaldığın ayet; bildirim, ezan, hesaplama yöntemi ve görünüm ayarların telefonunun içinde, yalnızca Mahya'nın erişebildiği alanda saklanır.</p>
+  <p>Bu bilgiler hiçbir sunucuya gönderilmez. Geliştirici olarak bunları göremez, toplamaz, satmaz ve kimseyle paylaşmayız. Reklam için de kullanmayız.</p>
+
+  <h2>2. Konum</h2>
+  <p>Konum izni isteğe bağlıdır. "Konumumu kullan" dediğinde telefonun yaklaşık konumu bir kez okunur ve en yakın il ya da ilçeyi bulmak için telefonda kullanılır; uygulama yalnızca seçilen yeri saklar. Mahya konumunu arka planda okumaz. Konum izni vermeden yerini listeden seçebilirsin.</p>
+  <p>Namaz vakitleri, kıble yönü ve kıble saati telefonda hesaplanır; bunlar için konumun hiçbir yere gönderilmez.</p>
+
+  <h2>3. Yakındaki camiler</h2>
+  <p>"Yakındaki Camiler" ekranını açtığında, seçili yerin ya da istersen o anki konumunun koordinatı yaklaşık 100 metreye yuvarlanarak OpenStreetMap verilerini sunan Overpass hizmetine (<code>overpass-api.de</code>) gönderilir ve çevredeki camiler alınır. Bu istek bizim sunucumuza gelmez; isteği karşılayan hizmet, her internet isteğinde olduğu gibi IP adresini görebilir. Bu ekranı açmazsan bu istek hiç yapılmaz. Bir camiye yol tarifi istediğinde telefonundaki harita uygulaması açılır ve o uygulamanın koşulları geçerlidir.</p>
+
+  <h2>4. Reklamlar (Google AdMob)</h2>
+  <p>Mahya, bazı ekranların sonunda etiketli Google AdMob reklamları gösterir. Namaz vakitleri, kıble, Kur'an ve zikir ekranlarında reklam yoktur; tam ekran reklam gösterilmez. Google Mobile Ads SDK, reklam sunmak, reklamları ölçmek ve sahtekarlığı önlemek için aşağıdaki bilgileri otomatik olarak toplar ve şifreli bağlantıyla (TLS) Google'a iletir.</p>
+  <table>
+    <tr><th>Bilgi</th><th>Açıklama</th></tr>
+    <tr><td>IP adresi</td><td>Cihazın yaklaşık konumunu (ülke, şehir düzeyinde) tahmin etmek için kullanılabilir.</td></tr>
+    <tr><td>Cihaz kimlikleri</td><td>Android reklam kimliği ve uygulama grubu kimliği.</td></tr>
+    <tr><td>Uygulama etkileşimleri</td><td>Uygulamanın açılması, reklamlara dokunma ve reklam görüntüleme.</td></tr>
+    <tr><td>Tanılama bilgileri</td><td>Açılış süresi, donma oranı, enerji kullanımı gibi performans bilgileri.</td></tr>
+  </table>
+  <p>Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre'de kişiselleştirilmiş reklamdan önce Google'ın onay formu gösterilir; bu tercihini Ayarlar &gt; Gizlilik'ten değiştirebilirsin. Reklam kimliğini telefonunun Ayarlar &gt; Gizlilik &gt; Reklamlar bölümünden sıfırlayabilir ya da silebilirsin. Namaz vakti uygulamasına yakışmayan kategorilerdeki (örneğin alkol, kumar, flört) reklamlar engellenmiştir.</p>
+  <p>Google'ın bu bilgileri nasıl kullandığı için: <a href="https://policies.google.com/technologies/partner-sites?hl=tr">Google iş ortaklarının sitelerini veya uygulamalarını kullandığınızda Google'ın verileri nasıl kullandığı</a> ve <a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a>.</p>
+
+  <h2>5. Reklamsız sürüm satın alma</h2>
+  <p>Reklamları kaldırmak için tek seferlik satın alma Google Play üzerinden yapılır. Ödeme bilgilerini Google işler; biz kart bilgini görmeyiz. Mahya telefonda yalnızca satın alımın olup olmadığını saklar ve bunu Google Play'den doğrular. Bütün özellikler satın almadan da ücretsizdir.</p>
+
+  <h2>6. İzinler</h2>
+  <ul>
+    <li><strong>Bildirimler:</strong> vakit bildirimleri, ezan, hatırlatmalar ve istersen bildirim çubuğunda kalan süre için.</li>
+    <li><strong>Tam zamanlı alarm:</strong> ezanın ve bildirimlerin vaktin dakikasında gelmesi için.</li>
+    <li><strong>Açılışta çalışma:</strong> telefon yeniden başladığında ya da saat dilimi değiştiğinde vakit alarmlarını yeniden kurmak için.</li>
+    <li><strong>Ön planda medya oynatma ve uyanık tutma:</strong> ezan ekran kapalıyken de sonuna kadar okunabilsin diye.</li>
+    <li><strong>Titreşim:</strong> zikirmatik ve bildirimler için.</li>
+    <li><strong>Yaklaşık konum (isteğe bağlı):</strong> en yakın ilçeyi ve yakındaki camileri bulmak için (madde 2 ve 3).</li>
+    <li><strong>İnternet:</strong> reklamlar, satın alma ve yakındaki camiler için. Kayıtların internete gönderilmez.</li>
+    <li><strong>Reklam kimliği:</strong> AdMob reklamları için (madde 4).</li>
+  </ul>
+  <p>Mahya kamera, mikrofon, rehber, fotoğraflar ya da dosyalarına erişmez.</p>
+
+  <h2>7. Paylaşma</h2>
+  <p>Bir duayı, ayeti ya da kandil mesajını paylaştığında Android'in paylaşım ekranı açılır; metni ya da resmi nereye göndereceğini sen seçersin. Gönderdiğin yer kendi gizlilik koşullarına tabidir.</p>
+
+  <h2>8. Çocuklar</h2>
+  <p>Mahya genel kullanıcılar için tasarlanmıştır, çocuklara yönelik değildir. Hiç kimseden kişisel bilgi toplamadığımız için çocuklardan da toplamayız.</p>
+
+  <h2>9. Verilerin silinmesi</h2>
+  <p>Ayarlar &gt; Verileri sil &gt; "Bütün verileri sil" ile bütün kayıtlarını ve ayarlarını telefondan kalıcı olarak silebilirsin; vakit alarmları da kapanır. Uygulamayı kaldırdığında da kayıtlar telefondan silinir. Bizde senin hakkında saklanan bir kayıt yoktur.</p>
+
+  <h2>10. Değişiklikler</h2>
+  <p>Bu politikayı değiştirirsek güncel hâlini bu sayfada, yeni yürürlük tarihiyle yayımlarız. Kayıtlarını telefondan dışarı gönderen bir özellik eklersek bunu önceden bu sayfada ve uygulamada açıkça belirtiriz.</p>
+
+  <h2>11. İletişim</h2>
+  <p>Sorular ve talepler için: <a href="mailto:gonenc.ozgan@gmail.com">gonenc.ozgan@gmail.com</a></p>
+</main>
+</body>
+</html>

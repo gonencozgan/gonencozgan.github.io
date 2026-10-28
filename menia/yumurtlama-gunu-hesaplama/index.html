@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yumurtlama Günü Hesaplama (Ovülasyon Hesaplama) | Menia</title>
+<meta name="description" content="Yumurtlama günü hesaplama: son regl tarihin ve döngü uzunluğunla ovülasyon gününü, doğurgan günlerini ve hamile kalma şansının en yüksek olduğu günleri bul.">
+<link rel="canonical" href="https://gonencozgan.github.io/menia/yumurtlama-gunu-hesaplama/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:title" content="Yumurtlama Günü Hesaplama (Ovülasyon Hesaplama)">
+<meta property="og:description" content="Ovülasyon günün, doğurgan günlerin ve en yüksek gebelik şansı.">
+<meta property="og:url" content="https://gonencozgan.github.io/menia/yumurtlama-gunu-hesaplama/">
+<meta property="og:image" content="https://gonencozgan.github.io/menia/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../icon.png">
+<link rel="stylesheet" href="../site.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "name": "Yumurtlama Günü Hesaplama",
+      "url": "https://gonencozgan.github.io/menia/yumurtlama-gunu-hesaplama/",
+      "inLanguage": "tr",
+      "description": "Son regl tarihinden ovülasyon gününü ve doğurgan günleri hesaplar."
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Menia", "item": "https://gonencozgan.github.io/menia/"},
+        {"@type": "ListItem", "position": 2, "name": "Yumurtlama Günü Hesaplama", "item": "https://gonencozgan.github.io/menia/yumurtlama-gunu-hesaplama/"}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "Yumurtlama günü nasıl hesaplanır?", "acceptedAnswer": {"@type": "Answer", "text": "Sıradaki reglin beklendiği günden 14 gün geriye sayılır. 28 günlük bir döngüde yumurtlama genellikle döngünün 14. gününe denk gelir."}},
+        {"@type": "Question", "name": "Doğurgan günler hangileri?", "acceptedAnswer": {"@type": "Answer", "text": "Yumurtlamadan önceki 5 gün, yumurtlama günü ve sonraki gün. En yüksek şans yumurtlama günü ve bir önceki gündür."}},
+        {"@type": "Question", "name": "Yumurtlama olduğunu nasıl anlarım?", "acceptedAnswer": {"@type": "Answer", "text": "Ovulasyon testinin pozitif çıkması, kaygan ve yumurta akı kıvamında akıntı ve sabah bazal vücut ısısının yaklaşık 0,2–0,5 °C yükselmesi yumurtlamanın işaretleridir."}},
+        {"@type": "Question", "name": "Döngüm düzensizse yumurtlama hesaplama işe yarar mı?", "acceptedAnswer": {"@type": "Answer", "text": "Düzensiz döngülerde takvim hesabı daha çok şaşar. Ovulasyon testi ve bazal ateş takibi yumurtlamayı daha iyi gösterir."}}
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header class="site"><a href="../"><img src="../icon.png" alt=""> Menia</a></header>
+<main>
+  <h1>Yumurtlama Günü Hesaplama</h1>
+  <p class="lead">Ovülasyon hesaplama aracı: son reglinin başladığı günü ve döngü uzunluğunu gir; yumurtlama gününü, doğurgan günlerini ve gebelik şansının en yüksek olduğu günleri gösterelim.</p>
+
+  <form class="card calc" id="calc">
+    <label for="last">Son reglin ilk günü</label>
+    <input type="date" id="last" required>
+    <label for="cycle">Döngü uzunluğu (gün)</label>
+    <input type="number" id="cycle" min="20" max="45" value="28" inputmode="numeric">
+    <button type="submit">Yumurtlama günümü hesapla</button>
+    <div class="result" id="result" aria-live="polite"></div>
+  </form>
+
+  <div class="cta">
+    <strong>Hamile kalmak istiyorsan</strong>
+    Menia'nın "Hamile kalmak istiyorum" modu doğurgan günlerini öne çıkarır, ovulasyon testine ne zaman başlayacağını söyler ve bazal ateşinle LH testlerinden senin yumurtlama gününü öğrenir. Ücretsiz, hesap gerekmez.
+    <br><a class="play" href="https://play.google.com/store/apps/details?id=com.menia.app&amp;referrer=utm_source%3Dsite%26utm_medium%3Dyumurtlama">Google Play'den indir</a>
+  </div>
+
+  <h2>Yumurtlama günü nasıl hesaplanır?</h2>
+  <p>Yumurtlama (ovülasyon), yumurtalıktan bir yumurtanın bırakıldığı gündür. Sıradaki regl başlamadan yaklaşık 14 gün önce olur. Bu yüzden yumurtlama günü hesaplanırken önce sıradaki reglin tarihi bulunur, sonra 14 gün geriye sayılır. 28 günlük bir döngüde bu, döngünün 14. günü; 32 günlük bir döngüde 18. günüdür.</p>
+  <p>Yumurtlamadan sonraki evre (luteal evre) çoğu kişide 12–14 gün sürse de 10 ile 16 gün arasında değişebilir. Kendi luteal evreni bilmek hesabı iyileştirir: Menia bunu bazal ateş ve ovulasyon testi kayıtlarından öğrenir.</p>
+
+  <h3>Doğurgan günler ve gebelik şansı</h3>
+  <p>Yumurta bırakıldıktan sonra yaklaşık bir gün yaşar, sperm ise kadın üreme yolunda beş güne kadar canlı kalabilir. Bu nedenle doğurgan dönem yumurtlamadan önceki 5 günü, yumurtlama gününü ve sonraki günü kapsar. Gebelik şansı en çok yumurtlama günü ve bir önceki günde yüksektir; iki-üç gün öncesinde de yüksektir.</p>
+
+  <h3>Yumurtlamanın belirtileri</h3>
+  <ul>
+    <li><strong>Akıntı:</strong> yumurtlamaya yaklaşırken artar; kaygan, şeffaf ve çiğ yumurta akı gibi esneyen bir kıvama gelir.</li>
+    <li><strong>Ovulasyon (LH) testi:</strong> yumurtlamadan 24–36 saat önce yükselen LH hormonunu idrarda ölçer. Pozitif sonuç yumurtlamanın yakın olduğunu gösterir.</li>
+    <li><strong>Bazal vücut ısısı:</strong> yumurtlamadan sonra yaklaşık 0,2–0,5 °C yükselir ve regle kadar yüksek kalır. Sabah, yataktan kalkmadan ölçülür.</li>
+    <li><strong>Kasık sızısı:</strong> bazı kişiler yumurtlama sırasında kasığın bir yanında kısa süren bir ağrı hisseder.</li>
+  </ul>
+
+  <h3>Düzensiz döngülerde</h3>
+  <p>Döngün aydan aya çok değişiyorsa takvim hesabı daha çok şaşar. Bu durumda ovulasyon testi ve bazal ateş takibi yumurtlamayı daha güvenilir gösterir. Menia düzensiz döngülerde tahmin aralığını genişletir ve ölçümlerin geldikçe tahmini o döngü için düzeltir.</p>
+
+  <h2>Sık sorulan sorular</h2>
+  <details><summary>Yumurtlama günü nasıl hesaplanır?</summary><p>Sıradaki reglin beklendiği günden 14 gün geriye sayılır. 28 günlük bir döngüde yumurtlama genellikle döngünün 14. gününe denk gelir.</p></details>
+  <details><summary>Doğurgan günler hangileri?</summary><p>Yumurtlamadan önceki 5 gün, yumurtlama günü ve sonraki gün. En yüksek şans yumurtlama günü ve bir önceki gündür.</p></details>
+  <details><summary>Yumurtlama olduğunu nasıl anlarım?</summary><p>Ovulasyon testinin pozitif çıkması, kaygan ve yumurta akı kıvamında akıntı ve sabah bazal vücut ısısının yaklaşık 0,2–0,5 °C yükselmesi yumurtlamanın işaretleridir.</p></details>
+  <details><summary>Döngüm düzensizse yumurtlama hesaplama işe yarar mı?</summary><p>Düzensiz döngülerde takvim hesabı daha çok şaşar. Ovulasyon testi ve bazal ateş takibi yumurtlamayı daha iyi gösterir.</p></details>
+
+  <h2>Diğer hesaplayıcılar</h2>
+  <nav class="links">
+    <a href="../adet-takvimi-hesaplama/">Adet takvimi hesaplama</a>
+    <a href="../adet-gecikmesi-hesaplama/">Adet gecikmesi hesaplama</a>
+    <a href="../dogum-tarihi-hesaplama/">Doğum tarihi ve gebelik haftası hesaplama</a>
+  </nav>
+</main>
+<footer>
+  Bu sayfa genel bilgilendirme içindir; tıbbi tavsiye yerine geçmez. Yumurtlama hesabı bir doğum kontrol yöntemi değildir ve gebelikten korunmak için kullanılmamalıdır. Hesaplama tarayıcında yapılır; girdiğin tarih hiçbir yere gönderilmez.
+  · <a href="../gizlilik/">Gizlilik</a> · <a href="../">Menia</a>
+</footer>
+<script src="../cycle.js"></script>
+<script>
+  const last = document.getElementById('last');
+  setUpDateInput(last, 7);
+  document.getElementById('calc').addEventListener('submit', (e) => {
+    e.preventDefault();
+    const start = parseDay(last.value);
+    const cycleLength = clampNumber(document.getElementById('cycle'), 20, 45, 28);
+    let o = currentOvulation(start, cycleLength);
+    let cycleStart = start;
+    // A window already over: show the next cycle's.
+    while (daysBetween(today(), o.fertileEnd) < 0) {
+      cycleStart = addDays(cycleStart, cycleLength);
+      o = currentOvulation(cycleStart, cycleLength);
+    }
+    const peak = range(addDays(o.ovulation, -1), o.ovulation);
+    const until = daysBetween(today(), o.ovulation);
+    const result = document.getElementById('result');
+    result.innerHTML = `
+      <p class="note">Tahmini yumurtlama günün</p>
+      <p class="big">${long.format(o.ovulation)}</p>
+      <p>${until > 0 ? `${until} gün sonra` : until === 0 ? 'Bugün' : `${-until} gün önceydi`} · döngünün ${daysBetween(cycleStart, o.ovulation) + 1}. günü</p>
+      <table>
+        <tr><th>Doğurgan günler</th><td><span class="pill fertile">${range(o.fertileStart, o.fertileEnd)}</span></td></tr>
+        <tr><th>En yüksek şans</th><td>${peak}</td></tr>
+        <tr><th>Ovulasyon testine başla</th><td>${daysBetween(today(), addDays(o.ovulation, -4)) <= 0 ? 'Bugün' : short.format(addDays(o.ovulation, -4))}</td></tr>
+        <tr><th>Sıradaki regl</th><td><span class="pill period">${short.format(addDays(cycleStart, cycleLength))}</span></td></tr>
+      </table>
+      <p class="note">Yumurtlama, bir sonraki reglden 14 gün önce varsayıldı. Tahmindir; doğum kontrol yöntemi değildir.</p>`;
+    result.classList.add('show');
+  });
+</script>
+</body>
+</html>

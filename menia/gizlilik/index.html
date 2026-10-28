@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menia Gizlilik Politikası</title>
+<meta name="description" content="Menia adet takvimi uygulamasının gizlilik politikası: regl kayıtların yalnızca telefonunda kalır, hesap ve sunucu yoktur.">
+<link rel="canonical" href="https://gonencozgan.github.io/menia/gizlilik/">
+<link rel="icon" href="../icon.png">
+<style>
+  :root { --bg: #fff7f4; --card: #ffffff; --ink: #2b1d3a; --muted: #6e6382; --brand: #b8406a; --line: #f1e2e4; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #15111e; --card: #201a2c; --ink: #f7eef5; --muted: #b4a6c3; --brand: #ff86a8; --line: #33293f; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 32px; line-height: 1.2; margin: 0 0 4px; }
+  h2 { font-size: 21px; margin: 36px 0 8px; }
+  .muted { color: var(--muted); }
+  .summary { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 4px 22px; margin-top: 24px; }
+  a { color: var(--brand); }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  th, td { text-align: left; padding: 8px 6px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Menia Gizlilik Politikası</h1>
+  <p class="muted">Menia: Regl &amp; Döngü Takvimi (Android, <code>com.menia.app</code>) · Yürürlük: 26 Ekim 2026</p>
+
+  <div class="summary">
+    <p><strong>Kısaca:</strong> Menia hesap istemez. Girdiğin regl, döngü ve sağlık kayıtları yalnızca telefonunda saklanır; bize ya da başka birine gönderilmez ve Google'ın bulut yedeğine de alınmaz. Uygulama ücretsizdir ve Google'ın reklam hizmeti AdMob ile reklam gösterir. AdMob, reklam için cihazına ait bazı bilgileri toplar (aşağıda). Reklamlar kayıtlarını görmez.</p>
+  </div>
+
+  <h2>1. Uygulamaya girdiğin bilgiler</h2>
+  <p>Regl günlerin ve akış miktarı; belirtilerin, ruh hâlin, enerji ve uyku durumun; akıntı, cinsel ilişki kayıtları; ovulasyon ve gebelik testi sonuçların; bazal vücut ısısı ve kilon; kullandığın ilaçlar ve takviyeler; doğum kontrol yöntemin; kendi etiketlerin, notların ve uygulama ayarların telefonunun içinde, yalnızca Menia'nın erişebildiği alanda saklanır.</p>
+  <p>Bu bilgiler hiçbir sunucuya gönderilmez. Geliştirici olarak bunları göremez, toplamaz, satmaz ve kimseyle paylaşmayız. Bu bilgileri reklam için de kullanmayız; reklam hizmetine hiçbir sağlık bilgisi iletilmez. Menia, telefonun Google bulut yedeğine ve cihazdan cihaza aktarıma kayıtlarını dahil etmez; kayıtlarını taşımak için uygulamanın kendi yedek dosyasını kullanırsın (madde 2).</p>
+
+  <h2>2. Yedekler, raporlar, paylaşım ve hata kaydı</h2>
+  <p>Ayarlar &gt; Yedekleme'den "Yedekle" dediğinde kayıtların tek bir dosyaya yazılır ve Android'in paylaşım ekranı açılır. Dosyayı nereye göndereceğini (örneğin Google Drive, e-posta) sen seçersin; dosya, gönderdiğin hizmetin kendi gizlilik koşullarına tabidir. Dosya şifrelenmez ve sağlık kayıtlarını içerir; güvendiğin bir yerde sakla.</p>
+  <p>"Doktor raporu" seçtiğin döngülerden bir PDF hazırlar, "Partnerime özet gönder" ise sıradaki regl ve doğurgan dönem tahmininden kısa bir metin oluşturur. İkisi de aynı paylaşım ekranını açar; kime göndereceğine sen karar verirsin.</p>
+  <p>Uygulamada beklenmeyen bir hata olursa hata mesajı ve teknik ayrıntılar telefondaki bir dosyaya yazılır. Bu dosya hiçbir yere kendiliğinden gönderilmez; Ayarlar &gt; Sorun bildir'den isteyerek paylaşabilir ya da silebilirsin. Dosyada döngü kayıtların bulunmaz.</p>
+
+  <h2>3. Reklamlar (Google AdMob)</h2>
+  <p>Menia bazı ekranlarda Google AdMob reklamları gösterir; günlük kayıt ekranında reklam yoktur. Google Mobile Ads SDK, reklam sunmak, reklamları ölçmek ve sahtekarlığı önlemek için aşağıdaki bilgileri otomatik olarak toplar ve Google'a iletir. Bu iletim şifreli bağlantıyla (TLS) yapılır.</p>
+  <table>
+    <tr><th>Bilgi</th><th>Açıklama</th></tr>
+    <tr><td>IP adresi</td><td>Cihazın yaklaşık konumunu (ülke, şehir düzeyinde) tahmin etmek için kullanılabilir.</td></tr>
+    <tr><td>Cihaz kimlikleri</td><td>Android reklam kimliği ve uygulama grubu kimliği.</td></tr>
+    <tr><td>Uygulama etkileşimleri</td><td>Uygulamanın açılması, reklamlara dokunma ve reklam görüntüleme.</td></tr>
+    <tr><td>Tanılama bilgileri</td><td>Açılış süresi, donma oranı, enerji kullanımı gibi performans bilgileri.</td></tr>
+  </table>
+  <p>Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre'de kişiselleştirilmiş reklamdan önce Google'ın onay formu gösterilir; bu tercihini Ayarlar &gt; Gizlilik ve güvenlik'ten değiştirebilirsin. Reklam kimliğini telefonunun Ayarlar &gt; Gizlilik &gt; Reklamlar bölümünden sıfırlayabilir ya da silebilirsin.</p>
+  <p>Google'ın bu bilgileri nasıl kullandığı için: <a href="https://policies.google.com/technologies/partner-sites">Google iş ortaklarının sitelerini veya uygulamalarını kullandığınızda Google'ın verileri nasıl kullandığı</a> ve <a href="https://policies.google.com/privacy">Google Gizlilik Politikası</a>.</p>
+
+  <h2>4. İzinler</h2>
+  <ul>
+    <li><strong>Bildirimler:</strong> seçtiğin hatırlatmalar için (regl, doğurgan dönem, hap, günlük kayıt). Bildirimler kilit ekranında içeriğini göstermez; "Gizli bildirimler" açıksa ne hakkında olduklarını hiç söylemezler.</li>
+    <li><strong>Açılışta çalışma:</strong> telefon yeniden başladığında hatırlatmaları yeniden kurmak için.</li>
+    <li><strong>Biyometrik doğrulama:</strong> uygulama kilidini parmak izi ya da yüzle açmak istersen. Parmak izin ya da yüz verin Menia'ya hiç ulaşmaz; doğrulamayı telefonun kendisi yapar.</li>
+    <li><strong>İnternet:</strong> yalnızca reklamlar için. Kayıtların internete gönderilmez.</li>
+    <li><strong>Reklam kimliği:</strong> AdMob reklamları için (bkz. madde 3).</li>
+  </ul>
+  <p>Menia konum, kamera, mikrofon, rehber ya da fotoğraflarına erişmez.</p>
+
+  <h2>5. Uygulama kilidi</h2>
+  <p>PIN belirlersen PIN'in kendisi saklanmaz; telefonda yalnızca tuzlanmış bir özeti (hash) tutulur. PIN unutulursa geliştirici dahil kimse onu kurtaramaz.</p>
+
+  <h2>6. Reklamsız sürüm satın alma</h2>
+  <p>Reklamları kaldırmak için tek seferlik satın alma Google Play üzerinden yapılır. Ödeme bilgilerini Google işler; biz kart bilgini görmeyiz. Menia telefonda yalnızca satın alımın olup olmadığını saklar ve bunu Google Play'den doğrular.</p>
+
+  <h2>7. Çocuklar</h2>
+  <p>Menia 13 yaşından küçük çocuklara yönelik değildir.</p>
+
+  <h2>8. Verilerin silinmesi</h2>
+  <p>Ayarlar &gt; Verileri sil &gt; "Tüm verilerimi sil" ile bütün kayıtlarını ve hata kaydını telefondan kalıcı olarak silebilirsin. Uygulamayı kaldırdığında da kayıtlar telefondan silinir. Kendi gönderdiğin yedek dosyaları, gönderdiğin yerden sen silmelisin. Bizde senin hakkında saklanan bir kayıt yoktur.</p>
+
+  <h2>9. Tıbbi bilgi değildir</h2>
+  <p>Menia'daki tahminler ve yazılar genel bilgilendirme amaçlıdır, doktor tavsiyesinin yerini tutmaz. Menia bir doğum kontrol yöntemi değildir ve gebelikten korunmak için kullanılmamalıdır.</p>
+
+  <h2>10. Değişiklikler</h2>
+  <p>Bu politikayı değiştirirsek güncel hâlini bu sayfada, yeni yürürlük tarihiyle yayımlarız. Uygulamanın kayıtlarını telefondan dışarı gönderen bir özellik eklersek bunu önceden bu sayfada ve uygulamada açıkça belirtiriz.</p>
+
+  <h2>11. İletişim</h2>
+  <p>Sorular ve talepler için: <a href="mailto:gonenc.ozgan@gmail.com">gonenc.ozgan@gmail.com</a></p>
+</main>
+</body>
+</html>
